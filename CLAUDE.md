@@ -7,7 +7,8 @@ shared `@vex/ui` design and the `@vex/vods-core` engine. Published by `publish.y
 `deploy` branch.
 
 - The site is vods-core's app (`createVodsApp()` in `src/main.ts`): pages, Manage and their logic live in vods-core,
-  not here. This repo keeps only the channel config, the site's name and art, and `main.ts`.
+  not here. Its Deep Field look is vods-core's `deep-field` entry (`ui: deepField` plus `deep-field.css`). This repo
+  keeps only the channel config, the site's name and art, and `main.ts`.
 - The archive API (twitch-archive) is read-only from here: ask for new endpoints there.
 - Dev servers in `.claude/launch.json`: `vods-dev` (:5175) proxies `/backend` to the public archive API;
   `vods-mock` runs the same port against vods-core's admin mock (`--mode mock`); the `-alt` variants use
