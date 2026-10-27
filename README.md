@@ -27,7 +27,6 @@ git config core.hooksPath .conventions/githooks   # once per clone: branch-name 
 | `/vods/:id` | watch the VOD uploads |
 | `/live/:id` | watch the live uploads |
 | `/youtube/:id` | watch whichever upload set exists (live first, like the old site) |
-| `/games/:id?part=N` | the VOD's per-game uploads; `part` is the 1-based game |
 | anything else | 404 |
 
 Watch URLs take `?t=` in **VOD time** (`1h2m3s`, `1:02:03` or seconds) and `?part=N` to start a part from its
@@ -46,7 +45,7 @@ FFZ). The game dropdown comes from the archive's `/v1/games-played` and filters 
 ## Manage (`/manage`)
 The archive's admin pages: status overview, the job queue (filter, start, pause/resume/retry/cancel, pause-before steps, live
 log), VODs (search including hidden and merged ones; per VOD: public or hidden, details (title, thumbnail, duration, date),
-chapters with Twitch category search and a lock, games rows, YouTube and Drive lists, saved emotes, re-fetch /
+chapters with Twitch category search and a lock, YouTube and Drive lists, saved emotes, re-fetch /
 re-upload / delete actions, merge and split; adding VODs the monitor missed), Storage (disk use and the worker's
 folders, deleting stale ones), Settings (the worker's runtime settings over its env defaults) and the audit log. It talks to twitch-archive's worker admin API at `/backend-admin` on the site's origin (`VITE_ADMIN_API`), with
 a session (HttpOnly cookie + CSRF token) from "Sign in with Twitch" (through vex-auth, for the worker's
