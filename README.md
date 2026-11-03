@@ -33,8 +33,9 @@ Watch URLs take `?t=` in **VOD time** (`1h2m3s`, `1:02:03` or seconds) and `?par
 beginning. With neither, playback resumes where this browser left off. Links from the old site differ only on
 VODs with restricted (cut) chapters, where the old `?t=` was upload time.
 
-The watch page has the same controls on phones and desktops: part picker (with parts YouTube can't play marked,
-plus a panel to skip them), chapters, copy link, Drive download when there is one, theater mode, keyboard
+The watch page has no site header (a back button over the player) and the same controls on phones and desktops: part
+picker (with parts YouTube can't play marked, plus a panel to skip them), chapters, copy link, Drive download when
+there is one, captions, a collapsible control bar, keyboard
 fullscreen, keyboard shortcuts (`?`), and chat settings (delay in 0.1 s steps, timestamps (off by default), badges,
 name colours, emote sources, text size, chat width beside the video). Chat settings are saved in this browser;
 watch progress follows the account when signed in (see "Signing in").

@@ -11,6 +11,6 @@
 
 ## vex-vods
 - [ ] **Mobile has the same functions as desktop.** Checked at ~390px: controls reflow or scroll, nothing is hidden.
-- [ ] Controls use the fixed heights (32px / 26px small); the header stays 48px (or is hidden in theater mode).
+- [ ] Controls use the fixed heights (32px / 26px small); the header stays 48px (the watch page has none).
 - [ ] Images, logos and icons are placeholders until real assets exist.
 - [ ] Time logic (parts, cuts, chat clock) lives in vods-core, not here.
