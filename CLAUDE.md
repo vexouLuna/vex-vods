@@ -13,5 +13,5 @@ shared `@vex/ui` design and the `@vex/vods-core` engine. Published by `publish.y
 - Dev servers in `.claude/launch.json`: `vods-dev` (:5175) proxies `/backend` to the public archive API;
   `vods-mock` runs the same port against vods-core's admin mock (`--mode mock`); the `-alt` variants use
   :5185 / :5186 so two can run side by side.
-- Controls use the fixed heights (32px / 26px small); the header stays 48px, or is hidden in theater
-  mode.
+- Controls use the fixed heights (32px / 26px small); the header stays 48px, and the watch page has none
+  (a back button over the player instead).
